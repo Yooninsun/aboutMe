@@ -1,0 +1,175 @@
+@charset'utf-8';
+  
+body,html, #wrap {
+  height: 100%;
+  font-family: arial,helvetica;
+}
+.wrap{
+	margin:0 auto;
+	position: relative;
+}
+.row {max-width: 1200px; margin: 0 auto; padding:0 10px;}
+h1,h2,h3,h4,h5,h6 {font-size: normal;}
+
+.cf { content:''; display:block; clear:both; }
+
+/*Header 영역---------------------  */
+.header-outer {
+  position:fixed; top:0px;
+  background: #333;
+  width: 100%;height: 80px;
+  display:block;z-index:9;
+}
+#header{
+  position: relative;
+  width: 100%; height: 80px;
+  color: #f2f2f2;
+  padding: 20px 0 0;
+}
+
+#header .home {display: inline-block;width : 120px}
+#header h1 {
+  padding: 10px; 
+  font-size: 32px;color: #fff;
+}
+#header .open-gnb {display: none;} 
+#header .nav {position: absolute; top :50%; right: 0; transform: translateY(-50%);}
+#header .nav .depth1 > li {display: inline-block;}
+#header .nav .depth1 > li > a {font-size: 20px; color: #fff; padding: 0 40px ; }
+
+/*Section CSS
+ * --------------------------------------- */
+
+#section0 { 
+  text-align: center; background-color: #000 !important; 
+}
+#section0 .intro #typing {
+  display: inline-block;
+  color: #f2f2f2; font-size: 48px;  
+  animation-name: cursor;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+@keyframes cursor{
+   0%{border-right: 1px solid #fff}
+   50%{border-right: 1px solid #000}
+   100%{border-right: 1px solid #fff}
+}
+
+#section1 #slide1 .intro {
+  color: #fff; ;
+}
+
+#section1 #slide1 .intro h2 { 
+  font-size: 34px; margin : 0 auto 30px;
+  text-align: center;
+}
+#section1 #slide1 .intro .profile {
+  margin : 0 auto ; 
+  text-align: center;
+}
+
+#section1 #slide1 .intro .imgbox { 
+  display: inline-block;
+  margin: 0 50px;
+  border: 10px #f2f2f2 solid;
+}
+
+#section1 #slide1 .intro .about-me { 
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+#section1 #slide1 .intro .about-me .name {
+ margin: 10px 0; font-size: 18px; font-weight: bold;
+}
+#section1 .intro .about-me .greeting {
+ margin: 10px 0;  
+}
+
+#section1 #slide2 .intro h2 {
+  text-align: center; color: #fff;
+  font-size: 32px;
+}
+
+#section1 #slide2 .intro .skill-box ul li {
+  position: relative; 
+  width:23%; 
+  padding: 10px;
+  float: left; text-align: center;
+}
+
+#section1 #slide2 .intro .skill-box ul li .img-box {
+  width: 150px; height:150px; position: relative;
+  border-radius: 50%; margin: 0 auto;
+}
+
+#section1 #slide2 .intro .skill-box ul li .box1 {
+ background-image: url(../images/html-icons.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box2 {
+  background-image: url(../images/css-icons.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box3 {
+  background-image: url(../images/js-icons.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box4 {
+  background-image: url(../images/jquery-icon.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box5 {
+  background-image: url(../images/ECMA-icon.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box6 {
+  background-image: url(../images/react-icon.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box7 {
+  background-image: url(../images/scss-icon.png); background-size:cover; 
+}
+#section1 #slide2 .intro .skill-box ul li .box8 {
+  background:#eee; color: #666;
+}
+#section1 #slide2 .intro .skill-box ul li .box8 p {
+  font-size: 42px; line-height: 150px;
+}
+#section1 #slide2 .intro .skill-box ul li .overlay {
+  width: 150px; height:150px; position: absolute; top:50%; left: 50%; transform: translate(-50%,-50%);
+  border-radius: 50%; margin: 0 auto;
+  background:rgba(255, 255, 255, 0.5);
+  border: 3px solid #fff; display: none; transition: all 2s; cursor: pointer;
+}
+#section1 #slide2 .intro .skill-box ul li:hover .overlay {
+  display: block;
+}
+#section1 #slide2 .intro .skill-box ul li:hover .box8 p {
+  display: none;
+}
+#section1 #slide2 .intro .skill-box ul li .overlay p {
+  text-align: center; line-height: 150px; font-size: 20px; color: #333; font-weight: bold;
+}
+#section2 .intro { position: relative; height: 90%;/* border:1px solid #f00; */}
+
+#section2 .intro h3{
+  height: 100px; line-height: 100px; margin:100px auto 50px ;
+  text-align: center; font-size: 32px; font-weight: bold; 
+  border: 1px solid #f00;
+}
+
+#section2 .intro .pofol-list ul li  {
+  width: 24.8%; height: 300px; float: left;
+  border: 1px solid #0f0;
+}
+
+
+#footer {
+  position: fixed;bottom:0px;
+  height: 30px;
+  display:block;
+  width: 100%;
+  background: #333;
+  z-index:9;
+  text-align:center;
+  color: #f2f2f2;
+  padding: 20px 0 0 0;
+}
+
+#footer p { font-size: 12px;}

@@ -1,0 +1,48 @@
+@charset 'utf-8';
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;margin: 0; font-size: 16px;
+}
+a{
+  text-decoration:none;
+  color: inherit;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+}
+
+img { 
+  vertical-align:middle; border:none ; max-width: 100%;
+}
+/*float 때문에 무너진 부모요소 살릴때*/
+.cf:after, .cf:before {
+  content: ''; clear: both;display: block;
+}
+
